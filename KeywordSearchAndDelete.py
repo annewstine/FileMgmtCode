@@ -1,4 +1,4 @@
-#Searches for files containing keyword and deletes them. Returns number of files deleted. 
+#Searches for files containing keyword and deletes them. Prints number of files deleted. 
 
 import fnmatch
 import os
