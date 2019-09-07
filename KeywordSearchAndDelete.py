@@ -1,11 +1,13 @@
+#Searches for files containing keyword and deletes them. Returns number of files deleted. 
+
 import fnmatch
 import os
 
-mypath = 'C:\\Users\\AStine\\PycharmProjects\\pdf2jpg\\testpdfs'
+mypath = 'C:\\Users\\...\\targetfolder'
 
 deleted = 0
 for file in os.listdir(mypath):
-    if fnmatch.fnmatch(file, '*Copy*'):
+    if fnmatch.fnmatch(file, '*SEARCH_TEXT*'):
         print(file + ' deleting...')
         deleted += 1
         os.remove(os.path.join(mypath, file))
